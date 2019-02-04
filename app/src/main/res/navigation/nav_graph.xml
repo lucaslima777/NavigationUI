@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <fragment
+        android:id="@+id/firstActivity"
+        android:name="navigation.ui.lln.One.OneActivity"
+        android:label="First Activity"
+        tools:layout="@layout/activity_one" />
+    <fragment
+        android:id="@+id/secondActivity"
+        android:name="navigation.ui.lln.Two.TwoActivity"
+        android:label="Second Activity"
+        tools:layout="@layout/activity_two" />
+    <fragment
+        android:id="@+id/thirdActivity"
+        android:name="navigation.ui.lln.Tree.TreeActivity"
+        android:label="Third Activity"
+        tools:layout="@layout/activity_tree" />
+
+    <fragment
+        android:id="@+id/fourthActivity"
+        android:name="navigation.ui.lln.Four.FourActivity"
+        android:label="Fourth Activity"
+        tools:layout="@layout/activity_four" />
+
+    <fragment
+        android:id="@+id/fifthActivity"
+        android:name="navigation.ui.lln.Five.FiveActivity"
+        android:label="Fifth Activity"
+        tools:layout="@layout/activity_five" />
+
+    <fragment
+        android:id="@+id/mainActivity"
+        android:name="navigation.ui.lln.MainActivity"
+        android:label="Main Activity"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_firstActivity2"
+            app:destination="@id/firstActivity" />
+        <action
+            android:id="@+id/action_mainActivity_to_secondActivity"
+            app:destination="@id/secondActivity" />
+        <action
+            android:id="@+id/action_mainActivity_to_thirdActivity"
+            app:destination="@id/thirdActivity" />
+        <action
+            android:id="@+id/action_mainActivity_to_fourthActivity"
+            app:destination="@id/fourthActivity" />
+        <action
+            android:id="@+id/action_mainActivity_to_fifthActivity"
+            app:destination="@id/fifthActivity" />
+    </fragment>
+
+</navigation>
